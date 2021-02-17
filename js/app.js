@@ -38,8 +38,16 @@ const school = [
     name: "sb high school aurangabad",
     city: "aurangabad",
     rating: 4.2,
-    img: "../images/sb-high.jpg",
-    desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+    img: "./images/sb-high.jpg",
+    desc: `Keeping the betterment of the students when it comes to academic, physical and mental progress paramount is S B High School in Aurangabad-maharashtra. `,
+  },
+  {
+    id: 1,
+    name: "Blue Ridge Public School",
+    city: "Pune",
+    rating: 4.2,
+    img: "./images/blue-ridge.jpeg",
+    desc: `BREI’s Blue Ridge Public School has been a rocking success from the very first year of its inception in the year 2010. Owing to the well-balanced approach, practised by the school, towards the holistic development of the students, schooling has been an enjoyable experience for the children and it is well-reflected in the overwhelming response that we got for the second academic year.`,
   },
 ];
 
@@ -49,19 +57,19 @@ window.addEventListener("DOMContentLoaded", function () {
   let displayschool = school.map(function (school) {
     // console.log(item);
 
-    return `<div class="school-item">
-          <img src=${school.img} alt=${school.name} class="photo" />
-          <div class="item-info">
-            <header>
-              <h4>${school.name}</h4>
-              <h4>${school.city}</h4>
-              <h4 class="rating">${school.rating}</h4>
-            </header>
-            <p class="item-text">
-              ${school.desc}
-            </p>
-          </div>
-        </div>`;
+    return `  <div class="card">
+    <div class="card-image">
+      <img src=${school.img} alt=${school.name} />
+    </div>
+    <div class="card-header">
+      <h1 class="card-title">${school.name}</h1>
+      <h6><i class="fa fa-map-marker" aria-hidden="true"></i> ${school.city}</h6>
+      <p>
+       ${school.desc}
+      </p>
+    </div>
+  </div>
+`;
   });
   displayschool = displayschool.join("");
   console.log(displayschool);
