@@ -8,13 +8,12 @@
 :root {
   --primary: tomato;
   --dark: #232323;
-  --pure: #ffff;
+  --pure: #ffffff;
   --smoke: whitesmoke;
   --dark-gray: #999;
 }
 body {
   font-family: "Lato", sans-serif;
-  background: var(--dark);
   color: var(--pure);
 }
 .container {
@@ -31,13 +30,13 @@ body {
 .brand {
   display: flex;
   align-items: center;
-  justify-content: center;
-
+  /* justify-content: center; */
   text-align: center;
 }
 .brand span {
   color: var(--primary);
   font-weight: 100;
+  font-size: 1.2rem;
 }
 .nav-wrapper .nav-list {
   list-style: none;
@@ -58,25 +57,6 @@ body {
 .nav-wrapper .nav-list li a:hover,
 .nav-wrapper .nav-list li.active a {
   color: var(--primary);
-}
-.btn {
-  background: var(--primary);
-  color: var(--pure);
-  outline: none;
-  padding: 8px 20px;
-  font-size: 14px;
-  cursor: pointer;
-  letter-spacing: 1px;
-  border: 1px solid transparent;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-}
-.btn:hover {
-  background: transparent;
-  border: 1px solid var(--primary);
 }
 main .header {
   display: flex;
@@ -108,10 +88,7 @@ nav ul.dropdown-list {
   z-index: 9999;
   left: 50%;
   transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
+
   opacity: 0;
   pointer-events: none;
 }
@@ -132,18 +109,10 @@ nav ul.dropdown-list {
   0% {
     opacity: 0;
     transform: translateX(-50%), translateY(50px);
-    -webkit-transform: translateX(-50%), translateY(50px);
-    -moz-transform: translateX(-50%), translateY(50px);
-    -ms-transform: translateX(-50%), translateY(50px);
-    -o-transform: translateX(-50%), translateY(50px);
   }
   100% {
     opacity: 1;
     transform: translateX(-50%), translateY(20px);
-    -webkit-transform: translateX(-50%), translateY(20px);
-    -moz-transform: translateX(-50%), translateY(20px);
-    -ms-transform: translateX(-50%), translateY(20px);
-    -o-transform: translateX(-50%), translateY(20px);
   }
 }
 .hamburger {
