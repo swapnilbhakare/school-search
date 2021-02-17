@@ -1,53 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>School Search</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+</head>
+
+<body>
     <nav>
-      <div class="container-flex nav-wrapper">
-        <div class="brand">
-          <span><strong>School Search</strong></span>
+        <div class="container-flex nav-wrapper">
+            <div class="brand">
+                <span><strong>School Search</strong></span>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list">
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li><a href="#">Q&A</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <ul class="nav-list">
-          <li class="active">
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li><a href="#">Q&A</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
     </nav>
     <main>
-      <section class="header container">
-        <div></div>
-        <div class="section-center"></div>
-      </section>
+
+        <section class="header-container">
+            <h1 class="tagline">Start Searching Yours Learning Journey!</h1>
+            <div id="search" class="d-flex">
+                <!-- City, Area, School Board(ICSE/CBSE) -->
+
+                <div class="school_form">
+                    <div class="row-one">
+                        <select name="school-board" class="form-control">
+                                <option value="">Select Board</option>
+                                <option value="college">ICSE</option>
+                                <option value="university">CBSE</option>
+                        </select>
+                    </div>
+                    <div class="state">
+                        <select name="state" class="form-control"><option value="">All State</option><option value="Maharashtra">Maharashtra</option><option value="Uttar Pradesh">Uttar Pradesh</option><option value="Tamil Nadu">Tamil Nadu</option><option value="Karnataka">Karnataka</option><option value="Kerala">Kerala</option><option value="Telangana">Telangana</option><option value="Andhra Pradesh">Andhra Pradesh</option><option value="West Bengal">West Bengal</option><option value="Punjab">Punjab</option><option value="Madhya Pradesh">Madhya Pradesh</option><option value="Haryana">Haryana</option><option value="Delhi">Delhi</option><option value="Odisha">Odisha</option><option value="Rajasthan">Rajasthan</option><option value="Assam">Assam</option><option value="Bihar">Bihar</option><option value="Uttarakhand">Uttarakhand</option><option value="Chhattisgarh">Chhattisgarh</option><option value="Gujarat">Gujarat</option><option value="Himachal Pradesh">Himachal Pradesh</option><option value="Jharkhand">Jharkhand</option><option value="Jammu and Kashmir">Jammu and Kashmir</option><option value="Pondicherry">Pondicherry</option><option value="Chandigarh">Chandigarh</option><option value="Goa">Goa</option><option value="Nagaland">Nagaland</option><option value="Meghalaya">Meghalaya</option><option value="Tripura">Tripura</option><option value="Manipur">Manipur</option><option value="Mizoram">Mizoram</option><option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option><option value="Sikkim">Sikkim</option><option value="Daman and Diu">Daman and Diu</option><option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option><option value="Arunachal Pradesh">Arunachal Pradesh</option><option value="Canillo">Canillo</option></select>
+                    </div>
+                    <div>
+                        <input name="search_home" type="button" class="subm" value="Search">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <div class="section-center">
+                <div class="school-item">
+                    <img src="images/sb-high.jpg" alt=${school.name} class="photo" />
+                    <div class="item-info">
+                        <header>
+                            <h4>title</h4>
+                            <h4>city</h4>
+                            <h4 class="rating">rating</h4>
+                        </header>
+                        <p class="item-text">
+                            description
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
 
-    <script src="./js/app.js"></script>
+    <!-- <script src="./js/app.js"></script> -->
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/jquery.js"></script>
-  </body>
+</body>
+
 </html>
