@@ -184,3 +184,6 @@ nav ul.dropdown-list {
 .mobile .nav-wrapper ul.dropdown-list li a:hover {
   color: var(--primary);
 }
+.card {
+  background: whitesmoke !important;
+}

@@ -31,3 +31,40 @@ hamburger.addEventListener("click", function () {
     isActive = false;
   }
 });
+
+const school = [
+  {
+    id: 1,
+    name: "sb high school aurangabad",
+    city: "aurangabad",
+    rating: 4.2,
+    img: "../images/sb-high.jpg",
+    desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+  },
+];
+
+const sectionCenter = document.querySelector(".section-center");
+
+window.addEventListener("DOMContentLoaded", function () {
+  let displayschool = school.map(function (school) {
+    // console.log(item);
+
+    return `<div class="school-item">
+          <img src=${school.img} alt=${school.name} class="photo" />
+          <div class="item-info">
+            <header>
+              <h4>${school.name}</h4>
+              <h4>${school.city}</h4>
+              <h4 class="rating">${school.rating}</h4>
+            </header>
+            <p class="item-text">
+              ${school.desc}
+            </p>
+          </div>
+        </div>`;
+  });
+  displayschool = displayschool.join("");
+  console.log(displayschool);
+
+  sectionCenter.innerHTML = displayschool;
+});
