@@ -286,6 +286,13 @@ nav ul.dropdown-list {
 
 /* header-section style */
 
+input.form-control.search-bar {
+  width: 50%;
+  background: transparent;
+  box-shadow: 3px 5px 9px grey;
+  border: none;
+}
+
 section.header-container {
   display: flex;
   flex-direction: column;
