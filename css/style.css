@@ -294,7 +294,6 @@ nav ul.dropdown-list {
 /* header-section style */
 
 input.form-control.search-bar {
-    width: 50%;
     background: transparent;
     box-shadow: 3px 5px 9px grey;
     border: none;
@@ -303,6 +302,41 @@ input.form-control.search-bar {
 h1.tagline.h1 {
     text-shadow: 3px 2px 3px grey;
     text-align: center;
+}
+
+.input-search {
+    width: 50%;
+    position: relative;
+}
+
+.input-search.autocom-box {
+    padding: 0px;
+    max-height: 280px;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.input-search.active.autocom-box {
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.input-search.active.autocom-box li {
+    display: block;
+}
+
+.autocom-box li {
+    list-style-type: none;
+    padding: 8px 12px;
+    width: 100%;
+    border-radius: 3px;
+    display: none;
+}
+
+.autocom-box li:hover {
+    background: grey;
 }
 
 select.form-control {
