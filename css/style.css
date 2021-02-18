@@ -299,6 +299,16 @@ input.form-control.search-bar {
     border: none;
 }
 
+h1.tagline.h1 {
+    text-shadow: 3px 2px 3px grey;
+    text-align: center;
+}
+
+select.form-control {
+    color: grey;
+    box-shadow: 2px 5px 7px grey;
+}
+
 section.header-container {
     display: flex;
     flex-direction: column;
@@ -309,6 +319,33 @@ section.header-container {
     background-image: url("../images/background1.jpg");
     background-position: bottom;
     background-size: cover;
+}
+
+.school_form {
+    display: flex;
+}
+
+input.subm {
+    width: 151px;
+    height: 43px;
+    border: none;
+    background: hotpink;
+    font-size: 21px;
+    border-radius: 11px;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    margin-bottom: 96px;
+}
+
+.city,
+.ratings,
+.area,
+.board,
+.sort {
+    margin: 10px;
+    box-shadow: 3px 5px 7px grey;
+    border-radius: 10px;
 }
 
 
