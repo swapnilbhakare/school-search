@@ -307,10 +307,13 @@ input.subm {
     border-radius: 11px;
     color: white;
     font-weight: bold;
+    outline: none;
+    margin-bottom: 96px;
 }
 
 h1.tagline.h1 {
     text-shadow: 3px 2px 3px grey;
+    text-align: center;
 }
 
 .city,
@@ -319,6 +322,13 @@ h1.tagline.h1 {
 .board,
 .sort {
     margin: 10px;
+    box-shadow: 3px 5px 7px grey;
+    border-radius: 10px;
+}
+
+select.form-control {
+    color: grey;
+    box-shadow: 2px 5px 7px grey;
 }
 
 
