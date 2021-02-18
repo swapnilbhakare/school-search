@@ -208,6 +208,7 @@ nav ul.dropdown-list {
 .mobile ul.nav-list.open {
     opacity: 1;
     pointer-events: auto;
+    color: white;
 }
 
 .mobile .hamburger span {
