@@ -18,6 +18,7 @@ body {
     font-family: "Lato", sans-serif;
     background: var(--dark);
     color: var(--black);
+    height: 400vh;
 }
 
 .container {
@@ -246,14 +247,25 @@ nav ul.dropdown-list {
     color: var(--primary);
 }
 
+
+/* card section */
+
 .section-center {
-    height: 200px;
-    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
 }
 
 .card {
-    display: flex;
-    margin-bottom: 1rem;
+    display: flex !important;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 1rem;
+    max-width: 600px;
+    min-height: 400px;
     background: #fdfbfb !important;
 }
 
@@ -263,8 +275,13 @@ nav ul.dropdown-list {
 }
 
 .card .card-title {
+    text-align: center;
     margin: 10px 0 5px 0;
     font-size: 1.5rem;
+}
+
+.card h6 {
+    text-align: center;
 }
 
 .card p {
@@ -292,43 +309,6 @@ section.header-container {
     background-image: url("../images/background1.jpg");
     background-position: bottom;
     background-size: cover;
-}
-
-.school_form {
-    display: flex;
-}
-
-input.subm {
-    width: 151px;
-    height: 43px;
-    border: none;
-    background: hotpink;
-    font-size: 21px;
-    border-radius: 11px;
-    color: white;
-    font-weight: bold;
-    outline: none;
-    margin-bottom: 96px;
-}
-
-h1.tagline.h1 {
-    text-shadow: 3px 2px 3px grey;
-    text-align: center;
-}
-
-.city,
-.ratings,
-.area,
-.board,
-.sort {
-    margin: 10px;
-    box-shadow: 3px 5px 7px grey;
-    border-radius: 10px;
-}
-
-select.form-control {
-    color: grey;
-    box-shadow: 2px 5px 7px grey;
 }
 
 
